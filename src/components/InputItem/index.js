@@ -6,7 +6,7 @@ const InputItem = (props) => {
     return (
         <Form.Item name={name} rules={rules}>
             <Input {...rest} />;
-            <Button className={styles.getCap}></Button>
+
         </Form.Item>
     );
     return (
