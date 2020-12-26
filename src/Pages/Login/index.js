@@ -22,10 +22,10 @@ const Login = () => {
                             prefix={<UserOutlined styles={{ color: "#1890ff" }} />}
                             placeholder="用户名"
                             size="large"
-                            rules={{
+                            rules={[{
                                 required: true,
                                 message: "plz input"
-                            }}
+                            }]}
                         />
                         <InputItem
                             name="password"
