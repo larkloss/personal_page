@@ -46,12 +46,12 @@ const InputItem = (props) => {
                     </Row>
             </Form.Item>
         );
-        return (
-            <Form.Item name={name} rules={rules}>
-                <Input {...rest}/>
-            </Form.Item>
-        )
     }
+    return (
+        <Form.Item name={name} rules={rules}>
+            <Input {...rest} />
+        </Form.Item>
+    )
 };
 
 export default InputItem;
