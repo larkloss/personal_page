@@ -17,6 +17,9 @@ const Login = () => {
     return (
         <div className={styles.loginContainer}>
             <div className={styles.login}>
+                <Form form={form}
+                      onFinish={handleFinish}
+                      ></Form>
                 <Tabs defaultActiveKey="1">
                     <TabPane tab="账户密码登录" key="1">
                         <InputItem
@@ -36,7 +39,7 @@ const Login = () => {
                             size="large"
                         />
                     </TabPane>
-                    <TabPane tab="手机号登陆" key="1">
+                    <TabPane tab="手机号登陆" key="2">
                         <InputItem
                             name="mobile"
                             prefix={<MobileTwoTone styles={{ color: "#1890ff" }} />}
