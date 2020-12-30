@@ -2,7 +2,7 @@ import React , {useState, useEffect} from "react";
 import { Input, Form, Button, Row, Col, message } from "antd";
 import styles from'./index.module.less'
 
-const InputItem = (props) => {
+const InputItem = React.forwardRef((props, ref) => {
     const { name, rules, ...rest } = props;
     const [timing, setTiming] = useState(false); //是否开始计时
     const handleClickCaptcha = () => {
@@ -49,9 +49,9 @@ const InputItem = (props) => {
     }
     return (
         <Form.Item name={name} rules={rules}>
-            <Input {...rest} />
+            <Input ref={ref} {...rest} />
         </Form.Item>
     )
-};
+});
 
 export default InputItem;

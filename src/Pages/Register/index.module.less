@@ -1,3 +1,5 @@
+
+@import '~antd';
 .RegisterContainer {
   background-image: url("https://gw.alipayobjects.com/zos/rmsportal/TVYTbAXWheQpRcWDaDMusvg");
   background-repeat: no-repeat;
@@ -9,5 +11,32 @@
     padding-top: 200px;
     width: 368px;
     margin: 0 auto;
+  }
+  .login{
+    float:right;
+  }
+}
+
+.success,
+.warning,
+.error {
+  transition: color 0.3s;
+}
+
+.success {
+  color: @success-color;
+}
+.warning {
+  color: @success-color;
+}
+.errors {
+  color: @success-color;
+}
+.progress-pass > .progress {
+  display:block;
+  :global {
+    .ant-progress-bg {
+      background-color: @warning-color;
+    }
   }
 }
