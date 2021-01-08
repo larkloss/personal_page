@@ -64,7 +64,7 @@ const Register = () => {
         if (!visible) {
             setVisible(!!value);
         }
-        setPopover(!Popover);
+        setPopover(!popover);
         if (value && form.getFieldsValue('confirm')) {
             form.validateFields(['confirm']);
         }
@@ -78,7 +78,7 @@ const Register = () => {
                 <Progress
                     status={passwordProgressMap[passwordStatus]}
                     storkeWidth={6}
-                    pe   rcent={value.length * 10 > 100 ? 100 : value.length * 10}
+                    percent={value.length * 10 > 100 ? 100 : value.length * 10}
                     showInfo={false}
                 />
             </div>
